@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    flex: 1;
+    min-height: 500px;
+    flex-direction: column;
+    margin: 0;
+    background-color: pink;
+}
+
+
+header,
+footer {
+    background-color: turquoise;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    height: 500px;
+}
+
+main article {
+    background-color: palevioletred;
+    flex: 2;
+    padding: 15px;
+}
+
+img {
+    align-items: center;
+}
+
+main aside {
+    background-color: teal;
+    flex: 1;
+    padding: 15px;
+}
+
+img {
+
+    flex: 2;
+    align-items: center;
+    margin-top: 200px;
+}
