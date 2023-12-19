@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Rupiah ke Dollar</title>
+    <script>
+        function hitungNilaiDollar() {
+            // Ambil nilai uang dalam rupiah dari input
+            var uangRupiah = document.getElementById("uangRupiah").value;
+
+            // Kurs dollar saat ini
+            var kursDollar = 14650;
+
+            // Hitung nilai dalam dollar
+            var nilaiDollar = uangRupiah / kursDollar;
+
+            // Tampilkan hasil
+            document.getElementById("hasil").innerHTML = "Nilai dalam dollar: $" + nilaiDollar.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h2>Konversi Rupiah ke Dollar</h2>
+    
+    <label for="uangRupiah">Jumlah uang dalam Rupiah: </label>
+    <input type="text" id="uangRupiah" placeholder="Masukkan jumlah uang">
+    
+    <button onclick="hitungNilaiDollar()">Hitung</button>
+    
+    <p id="hasil"></p>
